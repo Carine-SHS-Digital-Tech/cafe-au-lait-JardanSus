@@ -24,7 +24,6 @@ print("\nTo complete order, enter [5] ")
 
 
 def new_order():
-    order_id = 0
     count = 0
     menu1 = 0
     menu2 = 0
@@ -62,7 +61,6 @@ def new_order():
             menu4 = menu4 + qty
         elif order == "":
             print("Here is your order summary:")
-            order_id += 1
             a = 0
             sub_total = sum(orderPrice)
             while a < count:
@@ -70,7 +68,6 @@ def new_order():
                 print(f"Qty:\t{order_qty[a]}")
                 print(f"Price:\t${orderPrice[a]:.2f}")
                 a = a + 1
-            print(f"\nOrder ID:\t{order_id}")
             print(f"Subtotal:\t${sum(orderPrice):.2f}")
             if choice == "1":
                 print(f"Surcharge:\t${sub_total * takeAway:.2f}")
