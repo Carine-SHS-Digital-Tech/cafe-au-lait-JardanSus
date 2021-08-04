@@ -59,7 +59,7 @@ def new_order():
             order_qty.append(qty)
             count = count + 1
             menu4 = menu4 + qty
-        elif order == "":
+        elif order == "5":
             print("Here is your order summary:")
             a = 0
             sub_total = sum(orderPrice)
@@ -68,7 +68,7 @@ def new_order():
                 print(f"Qty:\t{order_qty[a]}")
                 print(f"Price:\t${orderPrice[a]:.2f}")
                 a = a + 1
-            print(f"Subtotal:\t${sum(orderPrice):.2f}")
+            print(f"\nSubtotal:\t${sum(orderPrice):.2f}")
             if choice == "1":
                 print(f"Surcharge:\t${sub_total * takeAway:.2f}")
                 print(f"GST:\t\t${sub_total * gst:.2f}")
