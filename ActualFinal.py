@@ -167,9 +167,9 @@ while program:
                             checkout = False
                         elif payment < total:
                             total = round(total - payment, 2)
-                            print(f"You still owe: $ {round(total, 2):.2f}")
+                            print(f"You still owe: ${round(total, 2):.2f}")
                         else:
-                            print(f"Your Change is: $ {round(total - payment, 2) * -1:.2f}")
+                            print(f"Your Change is: ${round(total - payment, 2) * -1:.2f}")
                             print("Payment Complete")
                             checkout = False
                 else:
@@ -186,9 +186,9 @@ while program:
                             checkout = False
                         elif payment < total:
                             total = round(total - payment, 2)
-                            print(f"You still owe: $ {round(total, 2):.2f}")
+                            print(f"You still owe: ${round(total, 2):.2f}")
                         else:
-                            print(f"Your Change is: $ {round(total - payment, 2) * -1:.2f}")
+                            print(f"Your Change is: ${round(total - payment, 2) * -1:.2f}")
                             print("Payment Complete")
                             checkout = False
 
@@ -236,3 +236,4 @@ while program:
         end_day = input("Is it the end of the day? [Y/N] ")
         if end_day == "Y":
             program = False
+
